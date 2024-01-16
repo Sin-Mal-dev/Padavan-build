@@ -125,7 +125,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_CLOUDFLAREDDNS=n" >> .config #CLOUDFLAREDDNS
         echo "CONFIG_FIRMWARE_INCLUDE_NVPPROXY=n" >> .config #NVPPROXY
         echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=n" >> .config #DDNSTO
-        echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=n" >> .config #WIREGUARD
+        echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=y" >> .config #WIREGUARD
         #
         echo "CONFIG_FIRMWARE_INCLUDE_ALDRIVER=n" >> .config #阿里云盘
         #
