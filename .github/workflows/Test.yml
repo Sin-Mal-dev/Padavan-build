@@ -8,11 +8,11 @@ on:
         description: 'target to compile'
         options:
         - Redmi_AC2100
-        default: SIM_AX1800T
+        default: Redmi_AC2100
       plugins:
         description: 'json format string of include configs'
         required: true
-        default: '{"vpnsvr":"n","vpncli":"n","vpncmd":"n","ss":"y","v2ray":"n","xray":"y","trojan":"y","ssobfs":"y","dnsforwarder":"n","adbyby":"n","adguardhome":"n","smartdns":"n","aliddns":"n","zerotier":"n","ddnsto":"n","wireguard":"n","frpc":"y","aldrive":"n","sqm":"y","mentohust":"n","scutclient":"n","njitclient":"n","minieap":"n","dogcom":"n"}'
+        default: '{"vpnsvr":"n","vpncli":"n","vpncmd":"n","ss":"y","v2ray":"n","xray":"y","trojan":"y","ssobfs":"n","dnsforwarder":"n","adbyby":"n","adguardhome":"n","smartdns":"n","aliddns":"n","zerotier":"n","ddnsto":"n","wireguard":"n","frpc":"n","aldrive":"n","sqm":"n","mentohust":"n","scutclient":"n","njitclient":"n","minieap":"n","dogcom":"n"}'
       usexraymin:
         type: boolean
         description: 'whether to use streamlined xray'
@@ -35,18 +35,18 @@ on:
         default: 'false'
       firmwarever:
         description: 'firmware''s version'
-        required: true
-        default: '20220520'
+        required: false
+        default: 'ILY'
       uploadanon:
         type: boolean
         description: 'upload firmware to anonfiles'
         default: 'false'
 env:
-  REPOSITORY_URL: https://github.com/Sin-Mal-dev/padavan-4.4.git
+  REPOSITORY_URL: https://github.com/Sin-Mal-dev/Padavan-KVR.git
   WORK_PATH: /opt/padavan-4.4
   TIME_ZONE: Asia/Shanghai
   FIRMWARE_DATEPREFIX: $(date +"%Y%m%d")
-  FIRMWARE_AUTHOR: vb1980
+  FIRMWARE_AUTHOR: Sin-Mal-dev
   FIRMWARE_PATH: /opt/firmwares
 jobs:
   build:
